@@ -270,9 +270,68 @@ footer {
 footer p{
 	background-color: #4b0b0b;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     color: #f1eeee;
     padding: 39px;
     padding-bottom: 39px;
     text-align: center;
+}
+
+/* Mobile Responsive Try */
+
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .header-title {
+        font-size: 20px;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    footer p {
+        font-size: 16px;
+    }
+    main{
+        max-width: 400px;
+    }
+    .group {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .group-info {
+        padding: 0 20px;
+    }
+    .group-info .title {
+        font-size: 25px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 50px;
+        padding: 0 20px;
+        /* display: none; */
+    }
+    .features img {
+        width: 100%;
+    }
+    .features-info .features-title {
+        font-size: 25px;
+    }
+    .features-info .features-title {
+        height: 60px;
+    }
+    .card {
+        padding: 0 20px;
+    }
+    .card .card-description {
+        width: 300px;
+    }
+    .features-info .experience {
+        position: relative;
+        left: 0;
+    }
 }
